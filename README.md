@@ -4,9 +4,9 @@
 A **Lista de Compras** é uma aplicação simples que permite ao usuário adicionar, remover e marcar itens como comprados. O objetivo é ajudar na organização das compras do dia a dia de forma prática.
 
 ## Tecnologias Utilizadas
-- **Frontend:** React ou React Native
-- **Armazenamento:** LocalStorage ou Firebase
-- **Estilização:** Tailwind CSS ou Styled Components (caso seja React Native)
+- **Frontend:** React Native
+- **Armazenamento:** LocalStorage
+- **Estilização:** Styled Components
 
 ## Funcionalidades Principais
 - Adicionar itens à lista
@@ -22,22 +22,19 @@ A **Lista de Compras** é uma aplicação simples que permite ao usuário adicio
 lista-de-compras/
 │-- src/
 │   │-- components/
-│   │   │-- ShoppingList.js
-│   │   │-- AddItemForm.js
+│   │   │-- ShoppingList.tsx
+│   │   │-- AddItemForm.tsx
 │   │-- utils/
-│   │   │-- storage.js
-│   │-- App.js
-│-- public/
+│   │   │-- storage.ts
+│   │-- app/
+│   │   │-- App.tsx
 │-- package.json
 ```
 
-- `App.js`: Componente principal que gerencia o estado da lista
-- `components/ShoppingList.js`: Renderiza a lista de compras
-- `components/AddItemForm.js`: Formulário para adicionar novos itens
-- `utils/storage.js`: Funções para salvar e recuperar dados do LocalStorage/Firebase
-
-## Endpoints da API (se utilizar Firebase)
-Caso o projeto utilize Firebase, os endpoints podem ser os seguintes:
+- `App.tsx`: Componente principal que gerencia o estado da lista
+- `components/ShoppingList.tsx`: Renderiza a lista de compras
+- `components/AddItemForm.tsx`: Formulário para adicionar novos itens
+- `utils/storage.ts`: Funções para salvar e recuperar dados do LocalStorage/Firebase
 
 ### Itens da Lista
 ```http
